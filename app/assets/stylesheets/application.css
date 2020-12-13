@@ -49,21 +49,11 @@ li {
     align-items: center;
     text-transform: uppercase;
     letter-spacing: 0.354em;
-}
-
-a.v {
     color:white;
     text-decoration: none;
     display: inline-block;
 
 }
 
-a.v:hover {
-    background: none;
-    color: gray;
-}
 
-main {
-    padding: 0.5em;
-}
 

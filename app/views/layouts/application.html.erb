@@ -15,8 +15,8 @@
   <nav class="side_nav">
     <ul>
       <li><a class ="v" href="/">Home</a></li>
-      <li><a class ="v"<%= link_to 'Actors', set_actor(@actor) %>>Actors</a></li>
-      <li><a class ="v" <%= link_to 'Films', set_film(@film) %>>Films</a></li>
+      <li class='v'><%= link_to 'Actor', actor_path(@actors)%> </li>
+      <li class ="v"><%= link_to 'Film', films_path(@film)%> </li>
 
     </ul>
 
