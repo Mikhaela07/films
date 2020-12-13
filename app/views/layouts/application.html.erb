@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pragprog Books Online Store</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', media: 'all',
+                          'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<header class="main">
+  <h1></h1>
+</header>
+<section class="content">
+  <nav class="side_nav">
+    <ul>
+      <li><a class ="v" href="/">Home</a></li>
+      <li><a class ="v" href="/actors">Actors</a></li>
+      <li><a class ="v" href="/films">Films</a></li>
+
+    </ul>
+
+  </nav>
+  <%= yield %>
+
+
+</section>
+
+</body>
+</html>

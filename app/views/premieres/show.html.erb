@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @premiere.date %>
+</p>
+
+<p>
+  <strong>Budget:</strong>
+  <%= @premiere.budget %>
+</p>
+
+<%= link_to 'Edit', edit_premiere_path(@premiere) %> |
+<%= link_to 'Back', premieres_path %>

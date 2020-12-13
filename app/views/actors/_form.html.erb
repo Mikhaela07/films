@@ -1,0 +1,42 @@
+<%= form_with(model: actor, local: true) do |form| %>
+  <% if actor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(actor.errors.count, "error") %> prohibited this actor from being saved:</h2>
+
+      <ul>
+        <% actor.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthplace %>
+    <%= form.text_field :birthplace %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthdate %>
+    <%= form.date_select :birthdate,:start_year => 1970, :end_year => 2020  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :horoscope %>
+    <%= form.text_field :horoscope %>
+  </div>
+
+  <div class="field">
+    <%= form.label :votes %>
+    <%= form.text_field :votes %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
